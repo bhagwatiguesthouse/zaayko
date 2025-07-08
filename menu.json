@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Starters",
+    "title": "🥗 Starters / Appetizers",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/starter.png",
+    "items": [
+      { "name": "Veg Spring Rolls", "price": "NPR 120" },
+      { "name": "Paneer Tikka", "price": "NPR 180" },
+      { "name": "Chicken Lollipop (6 pcs)", "price": "NPR 220" },
+      { "name": "French Fries", "price": "NPR 100" },
+      { "name": "Peri Peri Fries", "price": "NPR 120" },
+      { "name": "Tomato Soup", "price": "NPR 80" },
+      { "name": "Manchow Thukpa", "price": "NPR 100" },
+      { "name": "Chicken Thukpa", "price": "NPR 120" }
+    ]
+  },
+  {
+    "category": "MoMo",
+    "title": "🥟 Zaayko Mo:Mo Specials",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/MOMO.jpg",
+    "items": [
+      { "name": "Veg Steam Momo (10 pcs)", "price": "NPR 100" },
+      { "name": "Veg jhol Momo (10 pcs)", "price": "NPR 120" },
+      { "name": "Veg Fried Momo (10 pcs)", "price": "NPR 130" },
+      { "name": "Veg Chilli Momo", "price": "NPR 160" },
+      { "name": "Paneer Steam Momo", "price": "NPR 140" },
+      { "name": "Paneer Fried Momo", "price": "NPR 160" },
+      { "name": "Paneer Chilli Momo", "price": "NPR 180" },
+      { "name": "Chicken Steam Momo (10 pcs)", "price": "NPR 140" },
+      { "name": "Chicken jhol Momo (10 pcs)", "price": "NPR 160" },
+      { "name": "Chicken Fried Momo (10 pcs)", "price": "NPR 160" },
+      { "name": "Chicken Chilli Momo", "price": "NPR 180" },
+      { "name": "Mutton Steam Momo", "price": "NPR 180" },
+      { "name": "Mutton jhol Momo", "price": "NPR 210" },
+      { "name": "Mutton Fried Momo", "price": "NPR 210" },
+      { "name": "Mutton Chilli Momo", "price": "NPR 230" }
+    ]
+  },
+  {
+    "category": "Noodles",
+    "title": "🍜 Chowmein / Noodles",
+    "image": "https://bhagwatiguesthouse.github.io/foods/foods/chaumin.jpg",
+    "items": [
+      { "name": "Veg Chowmein", "price": "NPR 100" },
+      { "name": "Egg Chowmein", "price": "NPR 130" },
+      { "name": "Chicken Chowmein", "price": "NPR 150" },
+      { "name": "Paneer Chowmein", "price": "NPR 150" },
+      { "name": "Schezwan Veg Chowmein", "price": "NPR 140" },
+      { "name": "Schezwan Chicken Chowmein", "price": "NPR 160" },
+      { "name": "Mix Chowmein", "price": "NPR 170" }
+    ]
+  },
+  {
+    "category": "Rice & Biryani",
+    "title": "🍚 Rice & Biryani",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/biryani.png",
+    "items": [
+      { "name": "Chicken Fried Rice", "price": "NPR 110" },
+      { "name": "Jeera Rice", "price": "NPR 70" },
+      { "name": "Veg Pulao", "price": "NPR 80" },
+      { "name": "Chicken Biryani", "price": "NPR 180" },
+      { "name": "Mutton Biryani", "price": "NPR 250" }
+    ]
+  },
+  {
+    "category": "Snacks",
+    "title": "🥪 Snacks / Quick Bites",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/quickbites.jpg",
+    "items": [
+      { "name": "Veg Burger", "price": "NPR 100" },
+      { "name": "Chicken Burger", "price": "NPR 130" },
+      { "name": "Paneer Sandwich (Grilled)", "price": "NPR 120" },
+      { "name": "Chicken Wrap", "price": "NPR 130" },
+      { "name": "Veg Wrap", "price": "NPR 110" },
+      { "name": "Veg Pizza", "price": "NPR 150" },
+      { "name": "Chicken Pizza", "price": "NPR 180" }
+    ]
+  },
+  {
+    "category": "Burger",
+    "title": "🍔 Burger & Sandwich Specials",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/BurgerSandwichSpecial.jpg",
+    "items": [
+      { "name": "Veg Burger", "price": "NPR 100" },
+      { "name": "Cheese Veg Burger", "price": "NPR 120" },
+      { "name": "Paneer Burger", "price": "NPR 140" },
+      { "name": "Crispy Chicken Burger", "price": "NPR 150" },
+      { "name": "Grilled Chicken Burger", "price": "NPR 160" },
+      { "name": "Chicken Cheese Burger", "price": "NPR 170" },
+      { "name": "Double Chicken Burger", "price": "NPR 200" },
+      { "name": "Zaayko Special Chicken Burger (with spicy sauce)", "price": "NPR 180" },
+      { "name": "Paneer Sandwich (Grilled)", "price": "NPR 120" },
+      { "name": "Chicken Sandwich (Grilled)", "price": "NPR 130" },
+      { "name": "Cheese Sandwich", "price": "NPR 100" },
+      { "name": "Veg Club Sandwich (triple layer)", "price": "NPR 140" }
+    ]
+  },
+  {
+    "category": "Beverages",
+    "title": "🥤 Beverages",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/Beverages.png",
+    "items": [
+      { "name": "Masala Chai", "price": "NPR 30" },
+      { "name": "Coffee", "price": "NPR 50" },
+      { "name": "Dahi Lassi", "price": "NPR 100" },
+      { "name": "Soft Drinks", "price": "NPR 50" },
+      { "name": "Fresh Lime Soda", "price": "NPR 60" },
+      { "name": "Mocktails", "price": "NPR 80 – 100" }
+    ]
+  },
+  {
+    "category": "Desserts",
+    "title": "🍨 Desserts",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/desserts.png",
+    "items": [
+      { "name": "Gulab Jamun (2 pcs)", "price": "NPR 60" },
+      { "name": "Rasbhari Sweets (2 pcs)", "price": "NPR 60" },
+      { "name": "Dahi", "price": "NPR 60" },
+      { "name": "Fruits Salad", "price": "NPR 120" }
+    ]
+  }
+]
