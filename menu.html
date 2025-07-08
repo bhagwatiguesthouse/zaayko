@@ -1,332 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zaayko Mo:Mo's Menu</title>
-  <style>
-    /* RESET */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background-color: #fdfdfd;
-      color: #333;
-      padding: 20px;
-    }
-
-    .menu-container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      color: #d84315;
-      margin-bottom: 5px;
-      font-size: 2.5em;
-    }
-
-    .subtitle {
-      text-align: center;
-      font-style: italic;
-      color: #777;
-      margin-bottom: 30px;
-    }
-
-    /* NAVIGATION BAR */
-    .nav-container {
-      background: #fff3e0;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-      position: sticky;
-      top: 10px;
-      z-index: 10;
-    }
-
-    .menu-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .menu-nav button {
-      background-color: #ff9800;
-      border: none;
-      color: #fff;
-      padding: 10px 18px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 1em;
-      transition: all 0.3s ease;
-    }
-
-    .menu-nav button:hover,
-    .menu-nav button.active {
-      background-color: #e65100;
-    }
-
-    /* MENU SECTIONS */
-    .sections-wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
-    }
-
-    .section {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: none;
-      opacity: 0;
-      transform: scale(0.95);
-      transition: all 0.3s ease;
-    }
-
-    .section.active {
-      display: block;
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    .img-group img {
-      width: 100%;
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-color: #fdfdfd;
+  color: #333;
+  padding: 20px;
+}
+.menu-container {
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  color: #d84315;
+  margin-bottom: 5px;
+  font-size: 2.5em;
+}
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 30px;
+}
+.nav-container {
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+.menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.menu-nav button {
+  background-color: #ff9800;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+.menu-nav button:hover,
+.menu-nav button.active {
+  background-color: #e65100;
+}
+.sections-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+.section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.img-group img {
+  width: 100%;
   height: 250px;
   object-fit: contain;
   border-bottom: 3px solid #D43F00;
   background: #fff; /* or any color you want behind the image */
-    }
+}
+.content {
+  padding: 20px;
+}
+.content h3 {
+  color: #ff9800;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 5px;
+  color: #444;
+  font-size: 1em;
+}
+.item span:last-child {
+  font-weight: bold;
+  color: #d84315;
+}
+</style>
 
-    .content {
-      padding: 20px;
-    }
+<div class="menu-container">
+  <h1>🏠 Zaayko Mo:Mo's</h1>
+  <p class="subtitle">"Taste the Delight"</p>
 
-    .content h3 {
-      color: #ff9800;
-      margin-bottom: 15px;
-      font-size: 1.4em;
-    }
-
-    .item-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .item {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #f2f2f2;
-      padding-bottom: 5px;
-      color: #444;
-      font-size: 1em;
-    }
-
-    .item span:last-child {
-      font-weight: bold;
-      color: #d84315;
-    }
-  </style>
-</head>
-<body>
-  <div class="menu-container">
-    <h1>🏠 Zaayko Mo:Mo's</h1>
-    <p class="subtitle">"Taste the Delight"</p>
-
-    <!-- Navigation Container -->
-    <div class="nav-container">
-      <div class="menu-nav">
-        <button class="active" data-target="all">All</button>
-        <button data-target="Starters">Starters</button>
-        <button data-target="MoMo">Zaayko Mo:Mo Specials</button>
-        <button data-target="Noodles">Chowmein / Noodles</button>
-        <button data-target="Rice & Biryani">Rice & Biryani</button>
-        <button data-target="Snacks">Snacks / Quick Bites</button>
-        <button data-target="Burger">Burger & Sandwich Specials</button>
-        <button data-target="Beverages">Beverages</button>
-        <button data-target="Desserts">Desserts</button>
-      </div>
-    </div>
-
-    <!-- SECTIONS -->
-    <div class="sections-wrapper">
-      
-      <!-- Starters -->
-      <div class="section" data-category="Starters">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/starter.png" alt="Starters">
-        </div>
-        <div class="content">
-          <h3>🥗 Starters / Appetizers</h3>
-          <div class="item-list">
-            <div class="item"><span>Veg Spring Rolls</span><span>NPR 120</span></div>
-            <div class="item"><span>Paneer Tikka</span><span>NPR 180</span></div>
-            <div class="item"><span>Chicken Lollipop (6 pcs)</span><span>NPR 220</span></div>
-            <div class="item"><span>French Fries</span><span>NPR 100</span></div>
-            <div class="item"><span>Peri Peri Fries</span><span>NPR 120</span></div>
-            <div class="item"><span>Tomato Soup</span><span>NPR 80</span></div>
-            <div class="item"><span>Manchow Thukpa</span><span>NPR 100</span></div>
-            <div class="item"><span>Chicken Thukpa</span><span>NPR 120</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MoMo Specials -->
-      <div class="section" data-category="MoMo">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/MOMO.jpg" alt="MoMo">
-        </div>
-        <div class="content">
-          <h3>🥟 Zaayko Mo:Mo Specials</h3>
-          <div class="item-list">
-            <div class="item"><span>Veg Steam Momo (10 pcs)</span><span>NPR 100</span></div>
-            <div class="item"><span>Veg jhol Momo (10 pcs)</span><span>NPR 120</span></div>
-            <div class="item"><span>Veg Fried Momo (10 pcs)</span><span>NPR 130</span></div>
-            <div class="item"><span>Veg Chilli Momo</span><span>NPR 160</span></div>
-            <div class="item"><span>Paneer Steam Momo</span><span>NPR 140</span></div>
-            <div class="item"><span>Paneer Fried Momo</span><span>NPR 160</span></div>
-            <div class="item"><span>Paneer Chilli Momo</span><span>NPR 180</span></div>
-            <div class="item"><span>Chicken Steam Momo (10 pcs)</span><span>NPR 140</span></div>
-            <div class="item"><span>Chicken jhol Momo (10 pcs)</span><span>NPR 160</span></div>
-            <div class="item"><span>Chicken Fried Momo (10 pcs)</span><span>NPR 160</span></div>
-            <div class="item"><span>Chicken Chilli Momo</span><span>NPR 180</span></div>
-            <div class="item"><span>Mutton Steam Momo</span><span>NPR 180</span></div>
-            <div class="item"><span>Mutton jhol Momo</span><span>NPR 210</span></div>
-            <div class="item"><span>Mutton Fried Momo</span><span>NPR 210</span></div>
-            <div class="item"><span>Mutton Chilli Momo</span><span>NPR 230</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Noodles -->
-      <div class="section" data-category="Noodles">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/foods/foods/chaumin.jpg" alt="Noodles">
-        </div>
-        <div class="content">
-          <h3>🍜 Chowmein / Noodles</h3>
-          <div class="item-list">
-            <div class="item"><span>Veg Chowmein</span><span>NPR 100</span></div>
-            <div class="item"><span>Egg Chowmein</span><span>NPR 130</span></div>
-            <div class="item"><span>Chicken Chowmein</span><span>NPR 150</span></div>
-            <div class="item"><span>Paneer Chowmein</span><span>NPR 150</span></div>
-            <div class="item"><span>Schezwan Veg Chowmein</span><span>NPR 140</span></div>
-            <div class="item"><span>Schezwan Chicken Chowmein</span><span>NPR 160</span></div>
-            <div class="item"><span>Mix Chowmein</span><span>NPR 170</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Rice & Biryani -->
-      <div class="section" data-category="Rice & Biryani">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/biryani.png" alt="Rice & Biryani">
-        </div>
-        <div class="content">
-          <h3>🍚 Rice & Biryani</h3>
-          <div class="item-list">
-            <div class="item"><span>Chicken Fried Rice</span><span>NPR 110</span></div>
-            <div class="item"><span>Jeera Rice</span><span>NPR 70</span></div>
-            <div class="item"><span>Veg Pulao</span><span>NPR 80</span></div>
-            <div class="item"><span>Chicken Biryani</span><span>NPR 180</span></div>
-            <div class="item"><span>Mutton Biryani</span><span>NPR 250</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Snacks -->
-      <div class="section" data-category="Snacks">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/quickbites.jpg" alt="Snacks">
-        </div>
-        <div class="content">
-          <h3>🥪 Snacks / Quick Bites</h3>
-          <div class="item-list">
-            <div class="item"><span>Veg Burger</span><span>NPR 100</span></div>
-            <div class="item"><span>Chicken Burger</span><span>NPR 130</span></div>
-            <div class="item"><span>Paneer Sandwich (Grilled)</span><span>NPR 120</span></div>
-            <div class="item"><span>Chicken Wrap</span><span>NPR 130</span></div>
-            <div class="item"><span>Veg Wrap</span><span>NPR 110</span></div>
-            <div class="item"><span>Veg Pizza</span><span>NPR 150</span></div>
-            <div class="item"><span>Chicken Pizza</span><span>NPR 180</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Burger -->
-      <div class="section" data-category="Burger">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/BurgerSandwichSpecial.jpg" alt="Burger & Sandwich">
-        </div>
-        <div class="content">
-          <h3>🍔 Burger & Sandwich Specials</h3>
-          <div class="item-list">
-            <div class="item"><span>Veg Burger</span><span>NPR 100</span></div>
-            <div class="item"><span>Cheese Veg Burger</span><span>NPR 120</span></div>
-            <div class="item"><span>Paneer Burger</span><span>NPR 140</span></div>
-            <div class="item"><span>Crispy Chicken Burger</span><span>NPR 150</span></div>
-            <div class="item"><span>Grilled Chicken Burger</span><span>NPR 160</span></div>
-            <div class="item"><span>Chicken Cheese Burger</span><span>NPR 170</span></div>
-            <div class="item"><span>Double Chicken Burger</span><span>NPR 200</span></div>
-            <div class="item"><span>Zaayko Special Chicken Burger (with spicy sauce)</span><span>NPR 180</span></div>
-            <div class="item"><span>Paneer Sandwich (Grilled)</span><span>NPR 120</span></div>
-            <div class="item"><span>Chicken Sandwich (Grilled)</span><span>NPR 130</span></div>
-            <div class="item"><span>Cheese Sandwich</span><span>NPR 100</span></div>
-            <div class="item"><span>Veg Club Sandwich (triple layer)</span><span>NPR 140</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Beverages -->
-      <div class="section" data-category="Beverages">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/Beverages.png" alt="Beverages">
-        </div>
-        <div class="content">
-          <h3>🥤 Beverages</h3>
-          <div class="item-list">
-            <div class="item"><span>Masala Chai</span><span>NPR 30</span></div>
-            <div class="item"><span>Coffee</span><span>NPR 50</span></div>
-            <div class="item"><span>Dahi Lassi</span><span>NPR 100</span></div>
-            <div class="item"><span>Soft Drinks</span><span>NPR 50</span></div>
-            <div class="item"><span>Fresh Lime Soda</span><span>NPR 60</span></div>
-            <div class="item"><span>Mocktails</span><span>NPR 80 – 100</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desserts -->
-      <div class="section" data-category="Desserts">
-        <div class="img-group">
-          <img src="https://bhagwatiguesthouse.github.io/zaayko/desserts.png" alt="Desserts">
-        </div>
-        <div class="content">
-          <h3>🍨 Desserts</h3>
-          <div class="item-list">
-            <div class="item"><span>Gulab Jamun (2 pcs)</span><span>NPR 60</span></div>
-            <div class="item"><span>Rasbhari Sweets (2 pcs)</span><span>NPR 60</span></div>
-            <div class="item"><span>Dahi</span><span>NPR 60</span></div>
-            <div class="item"><span>Fruits Salad</span><span>NPR 120</span></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+  <div class="nav-container">
+    <div class="menu-nav" id="nav-buttons"></div>
   </div>
 
-  
-   <script src="https://bhagwatiguesthouse.github.io/zaayko/zaayko-menu.js"></script> 
-</body>
-</html>
+  <div class="sections-wrapper" id="menu-sections"></div>
+</div>
+
+<script>
+(function(){
+function slugify(text) {
+  return text
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/\s+/g, '-')   
+    .replace(/[^\w-]+/g, '') 
+    .replace(/--+/g, '-');   
+}
+
+function initMenu(data) {
+  var navContainer = document.getElementById('nav-buttons');
+  var sectionsWrapper = document.getElementById('menu-sections');
+
+  // Create All button
+  var allBtn = document.createElement('button');
+  allBtn.textContent = "All";
+  allBtn.classList.add('active');
+  allBtn.dataset.target = 'all';
+  navContainer.appendChild(allBtn);
+
+  // Create category buttons
+  data.forEach(section => {
+    var slug = slugify(section.category);
+    var btn = document.createElement('button');
+    btn.textContent = section.category;
+    btn.dataset.target = slug;
+    navContainer.appendChild(btn);
+  });
+
+  // Create sections
+  data.forEach(section => {
+    var slug = slugify(section.category);
+    var div = document.createElement('div');
+    div.classList.add('section', `category-${slug}`);
+    div.innerHTML = `
+      <div class="img-group">
+        <img src="${section.image}" alt="${section.category}">
+      </div>
+      <div class="content">
+        <h3>${section.title}</h3>
+        <div class="item-list">
+          ${section.items.map(item => `
+            <div class="item">
+              <span>${item.name}</span>
+              <span>${item.price}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    sectionsWrapper.appendChild(div);
+  });
+
+  // Handle button clicks
+  navContainer.addEventListener('click', function(e) {
+    if (e.target.tagName === 'BUTTON') {
+      navContainer.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+
+      var target = e.target.dataset.target;
+
+      document.querySelectorAll('.section').forEach(sec => {
+        if (target === 'all') {
+          sec.style.display = 'block';
+        } else {
+          if (sec.classList.contains('category-' + target)) {
+            sec.style.display = 'block';
+          } else {
+            sec.style.display = 'none';
+          }
+        }
+      });
+    }
+  });
+}
+
+// Wait for Blogspot to load everything
+window.addEventListener('load', function(){
+  fetch("https://bhagwatiguesthouse.github.io/zaayko/menu.json")
+    .then(res => res.json())
+    .then(data => initMenu(data))
+    .catch(err => console.error(err));
+});
+})();
+</script>
 
  <style>
   /* Logo Overlay CSS */
