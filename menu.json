@@ -118,16 +118,5 @@
       { "name": "Dahi", "price": "NPR 60" },
       { "name": "Fruits Salad", "price": "NPR 120" }
     ]
-  },
-  {
-    "category": "Desserts",
-    "title": "🍨 Desserts",
-    "image": "https://bhagwatiguesthouse.github.io/zaayko/desserts.png",
-    "items": [
-      { "name": "Gulab Jamun (2 pcs)", "price": "NPR 60" },
-      { "name": "Rasbhari Sweets (2 pcs)", "price": "NPR 60" },
-      { "name": "Dahi", "price": "NPR 60" },
-      { "name": "Fruits Salad", "price": "NPR 120" }
-    ]
   }
 ]
