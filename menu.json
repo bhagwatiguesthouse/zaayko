@@ -86,7 +86,6 @@
       { "name": "Chicken Chilli Momo", "price": "NPR 180" },
       { "name": "Chicken jhol Momo (10 pcs)", "price": "NPR 200" },
       { "name": "Mutton Steam Momo", "price": "NPR 200" },
-      { "name": "Mutton jhol Momo", "price": "NPR 250" },
       { "name": "Mutton Fried Momo", "price": "NPR 220" },
       { "name": "Mutton Chilli Momo", "price": "NPR 240" },
       { "name": "Mutton jhol Momo", "price": "NPR 250" }
@@ -102,7 +101,7 @@
       { "name": "Egg Chowmein", "price": "NPR 150" },
       { "name": "Chicken Chowmein", "price": "NPR 150" },
       { "name": "Schezwan Chicken Chowmein", "price": "NPR 160" },
-      { "name": "Mix Chowmein(chicken,egg)", "price": "NPR 170" },
+      { "name": "Mix Chowmein(chicken,egg)", "price": "NPR 170" }
     ]
   },
   {
