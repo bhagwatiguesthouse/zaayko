@@ -82,26 +82,177 @@
     "image": "https://bhagwatiguesthouse.github.io/zaayko/BurgerSandwichSpecial.jpg",
     "items": [
       { "name": "Veg Burger", "price": "NPR 100" },
-      { "name": "Cheese Veg Burger", "price": "NPR 120" },
-      { "name": "Paneer Burger", "price": "NPR 140" },
-      { "name": "Crispy Chicken Burger", "price": "NPR 150" },
-      { "name": "Grilled Chicken Burger", "price": "NPR 160" },
-      { "name": "Chicken Cheese Burger", "price": "NPR 170" },
-      { "name": "Double Chicken Burger", "price": "NPR 200" },
-      { "name": "Zaayko Special Chicken Burger (with spicy sauce)", "price": "NPR 180" },
-      { "name": "Paneer Sandwich (Grilled)", "price": "NPR 120" },
-      { "name": "Chicken Sandwich (Grilled)", "price": "NPR 130" },
-      { "name": "Cheese Sandwich", "price": "NPR 100" },
-      { "name": "Veg Club Sandwich (triple layer)", "price": "NPR 140" }
+      { "name": "Veg Slice Cheese Burger", "price": "NPR 130" },
+      { "name": "chicken Burger", "price": "NPR 150" },
+      { "name": "Chicken Cheese Burger", "price": "NPR 180" },
+      { "name": "Veg Sandwich(grilled)", "price": "NPR 120" },
+      { "name": "Paneer Sandwich(grilled)", "price": "NPR 150" },
+      { "name": "Cheese & Tomato Sandwich(Zaayko Special)", "price": "NPR 180" },
+      { "name": "Zaayko Special Chicken Burger (with spicy sauce)", "price": "NPR 200" },
+      { "name": "Chicken Sandwich (Grilled)", "price": "NPR 200" }
     ]
   },
   {
-    "category": "Beverages",
+    "category": "Rolls/Wraps",
+    "title": "🌯 Rolls/Wraps",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/BurgerSandwichSpecial.jpg",
+    "items": [
+      { "name": "Veg Spring Roll", "price": "NPR 100" },
+      { "name": "Paneer Spring Roll", "price": "NPR 120" },
+      { "name": "Paneer Katti Roll", "price": "NPR 180" },
+      { "name": "Chicken Spring Roll", "price": "NPR 150" },
+      { "name": "Egg Roll", "price": "NPR 130" },
+      { "name": "Chicken Katti Roll", "price": "NPR 180" }
+    ]
+  },
+  {
+    "category": "Pizza",
+    "title": "🍕 Pizza",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/BurgerSandwichSpecial.jpg",
+    "items": [
+      { "name": "Veg Pizza", "price": "NPR 350" },
+      { "name": "Chicken Pizza", "price": "NPR 450" },
+      { "name": "Mushroom Pizza", "price": "NPR 400" },
+      { "name": "Extra Cheese", "price": "NPR 80" }
+    ]
+  },
+  {
+    "category": "MoMo",
+    "title": "🥟 Zaayko Mo:Mo Specials",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/MOMO.jpg",
+    "items": [
+      { "name": "Veg Steam Momo (10 pcs)", "price": "NPR 100" },
+      { "name": "Veg Fried Momo (10 pcs)", "price": "NPR 120" },
+      { "name": "Veg Chilli Momo", "price": "NPR 150" },
+      { "name": "Veg Jhol Momo (10 pcs)", "price": "NPR 170" },
+      { "name": "Paneer Steam Momo", "price": "NPR 140" },
+      { "name": "Paneer Fried Momo", "price": "NPR 160" },
+      { "name": "Paneer Chilli Momo", "price": "NPR 180" },
+      { "name": "Paneer Jhol Momo", "price": "NPR 200" },
+      { "name": "Chicken Steam Momo (10 pcs)", "price": "NPR 140" },
+      { "name": "Chicken Fried Momo (10 pcs)", "price": "NPR 160" },
+      { "name": "Chicken Chilli Momo", "price": "NPR 180" },
+      { "name": "Chicken jhol Momo (10 pcs)", "price": "NPR 200" },
+      { "name": "Mutton Steam Momo", "price": "NPR 200" },
+      { "name": "Mutton jhol Momo", "price": "NPR 250" },
+      { "name": "Mutton Fried Momo", "price": "NPR 220" },
+      { "name": "Mutton Chilli Momo", "price": "NPR 240" }
+      { "name": "Mutton jhol Momo", "price": "NPR 250" },
+    ]
+  },
+  {
+    "category": "Rice & Biryani",
+    "title": "🍚 Rice & Biryani",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/biryani.png",
+    "items": [
+      { "name": "Veg Fried Rice", "price": "NPR 120" },
+      { "name": "Chicken Fried Rice", "price": "NPR 160" },
+      { "name": "Mutton Fried Rice", "price": "NPR 250" },
+      { "name": "Egg Fried Rice", "price": "NPR 150" },
+      { "name": "Steam Rice", "price": "NPR 80" },
+      { "name": "Chicken Biryani(2 pcs Chicken)", "price": "NPR 150" },
+      { "name": "Mutton Biryani", "price": "NPR 250" }
+    ]
+  },
+  {
+    "category": "Rice & Biryani",
+    "title": "Veg & Non Veg Curry",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/biryani.png",
+    "items": [
+      { "name": "Dal Fry", "price": "NPR 120" },
+      { "name": "Mix Veg Curry", "price": "NPR 180" },
+      { "name": "Paneer Curry", "price": "NPR 300" },
+      { "name": "Chicken Curry", "price": "NPR 250" }
+    ]
+  },
+  {
+    "category": "Khana Set",
+    "title": "Khana Set",
+    "image": "https://bhagwatiguesthouse.github.io/zaayko/biryani.png",
+    "items": [
+      { "name": "Veg Thali", "price": "NPR 180" },
+      { "name": "Chicken Thali", "price": "NPR 250" },
+      { "name": "Mutton Thali", "price": "NPR 380" }
+    ]
+  },
+  {
+  "category": "🍗 Non-veg Snacks",
+  "title": "🍗 Non-veg Snacks",
+  "image": "https://bhagwatiguesthouse.github.io/zaayko/NonVegSnacks.png",
+  "items": [
+    { "name": "Fish fry (per pic)", "price": "NPR 70" },
+    { "name": "Chicken fry", "price": "NPR 200" },
+    { "name": "Chicken chilly", "price": "NPR 300" },
+    { "name": "Chicken roast", "price": "NPR 300" },
+    { "name": "Lemon chicken", "price": "NPR 250" },
+    { "name": "Chicken lollipop (4 pcs)", "price": "NPR 220" },
+    { "name": "Chicken manchurian", "price": "NPR 220" },
+    { "name": "Chicken sadheko", "price": "NPR 250" },
+    { "name": "Chicken tass", "price": "NPR 300" },
+    { "name": "Chicken 65 (100 gmms)", "price": "NPR 100" },
+    { "name": "Chicken boneless fry (100 gmms)", "price": "NPR 200" },
+    { "name": "Chicken leg pcs fry (per pcs)", "price": "NPR 100" },
+    { "name": "Chicken leg pcs fry gravy (per pcs)", "price": "NPR 150" },
+    { "name": "Chicken crispy (full/half)", "price": "NPR 220 / 110" },
+    { "name": "Chiness chopsy", "price": "NPR 250" },
+    { "name": "Chicken sausage (1 stick)", "price": "NPR 50" },
+    { "name": "Mutton gravy (full/half)", "price": "NPR 400 / 200" },
+    { "name": "Mutton fry (Full)", "price": "NPR 400" },
+    { "name": "Mutton chilly", "price": "NPR 400" }
+  ]
+},
+{
+  "category": "🍹 Fresh Juice",
+  "title": "🍹 Fresh Juice",
+  "image": "https://bhagwatiguesthouse.github.io/zaayko/FreshJuice.png",
+  "items": [
+    { "name": "Seasonal Your Choice (Apple, Banana, Orange, Water malion)", "price": "NPR 150" },
+    { "name": "Lassi", "price": "NPR 100" }
+  ]
+},
+{
+  "category": "🥗 Veg Snacks",
+  "title": "🥗 Veg Snacks",
+  "image": "https://bhagwatiguesthouse.github.io/zaayko/VegSnacks.png",
+  "items": [
+    { "name": "French fry", "price": "NPR 150" },
+    { "name": "Veg pakouda", "price": "NPR 120" },
+    { "name": "Veg manchurian", "price": "NPR 120" },
+    { "name": "Paneer pakouda", "price": "NPR 200" },
+    { "name": "Paneer chilly", "price": "NPR 300" },
+    { "name": "Mushroom chilly", "price": "NPR 250" },
+    { "name": "Papad dry/fry", "price": "NPR 30" },
+    { "name": "Samosa", "price": "NPR 20" },
+    { "name": "Puri Sabji", "price": "NPR 70" },
+    { "name": "Chhola Bhatura", "price": "NPR 70" }
+  ]
+},
+{
+  "category": "🍜 Thukpa",
+  "title": "🍜 Thukpa",
+  "image": "https://bhagwatiguesthouse.github.io/zaayko/Thukpa.png",
+  "items": [
+    { "name": "Veg Thukpa", "price": "NPR 100" },
+    { "name": "Chicken Thukpa", "price": "NPR 150" }
+  ]
+},
+{
+  "category": "🥣 Soup",
+  "title": "🥣 Soup",
+  "image": "https://bhagwatiguesthouse.github.io/zaayko/Soup.png",
+  "items": [
+    { "name": "Veg Soup", "price": "NPR 80" },
+    { "name": "Chicken Soup", "price": "NPR 120" },
+    { "name": "Mutton Soup", "price": "NPR 150" }
+  ]
+},
+  {
+    "category": "🥤 Beverages",
     "title": "🥤 Beverages",
     "image": "https://bhagwatiguesthouse.github.io/zaayko/Beverages.png",
     "items": [
       { "name": "Masala Chai", "price": "NPR 30" },
-      { "name": "Coffee", "price": "NPR 50" },
+      { "name": "Coffee", "price": "NPR 70" },
       { "name": "Dahi Lassi", "price": "NPR 100" },
       { "name": "Soft Drinks", "price": "NPR 50" },
       { "name": "Fresh Lime Soda", "price": "NPR 60" },
@@ -116,7 +267,7 @@
       { "name": "Gulab Jamun (2 pcs)", "price": "NPR 60" },
       { "name": "Rasbhari Sweets (2 pcs)", "price": "NPR 60" },
       { "name": "Dahi", "price": "NPR 60" },
-      { "name": "Fruits Salad", "price": "NPR 120" }
+      { "name": "Fruits Salad", "price": "NPR 150" }
     ]
   }
 ]
